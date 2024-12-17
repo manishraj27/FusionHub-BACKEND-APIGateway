@@ -10,7 +10,7 @@ WORKDIR /app
 COPY --from=build /app/target/APIGateway-0.0.1-SNAPSHOT.jar APIGateway.jar
 
 # Expose the application port
-EXPOSE 8082
+EXPOSE 8084
 
 # Command to run the application
 ENTRYPOINT ["java", "-jar", "APIGateway.jar"]
