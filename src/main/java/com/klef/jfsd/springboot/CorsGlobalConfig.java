@@ -16,6 +16,7 @@ public class CorsGlobalConfig {
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
         config.addAllowedOrigin("http://localhost:5173"); 
+        config.addAllowedOrigin("http://localhost:5174"); 
         config.addAllowedOrigin("https://fusionhub.netlify.app");
         config.addAllowedMethod("*");       
         config.addAllowedHeader("*");
